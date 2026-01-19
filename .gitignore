@@ -1,0 +1,9 @@
+*.class
+*.log
+*.tmp
+.vscode/
+bin/
+out/
+target/
+.DS_Store
+Thumbs.db

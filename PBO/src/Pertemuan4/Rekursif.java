@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Rekursif {
+    static int jumlahDeret(int n) {
+        if ( n == 1) {
+            System.out.print ("1");
+            return 1;
+        } else {
+            int hasilJumlah = jumlahDeret (n - 1);
+            System.out.print ("+" + n);
+            return n + hasilJumlah;
+        }
+    }
+
+    public static void main (String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print ("Masukkan angka: ");
+        int n = input.nextInt();
+
+        System.out.print("Proses: ");
+        int hasil = jumlahDeret(n);
+        System.out.print(" = " +hasil);
+    }
+}
+
